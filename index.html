@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Warlock</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/icon/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-5.14.0-web/css/all.css">
+    <link rel="stylesheet" href="assets/fonts/bluesky/webfonts/fa-regular-400.ttf">
+    <link rel="stylesheet" href="assets/css/personal.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/personal.js"></script>
+</head>
+<body class="text-primary"  >
+    <!-- Let's create the navigation bar -->
+            <!-- <nav style="position: sticky;top: 0px;bottom:0;z-index: 234; background-color: #000;"
+                class="navbar navbar-expand-sm navbar-primary">
+                <a class="navbar-brand" href="#"><img src="assets/images/image1.jpg"
+                        style="height: 30px;width: 30px;border-radius: 50px;" alt=""><a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        oncontextmenu="return false" onkeypress="return false" onkeyup="return false" onpageshow="return false"
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav new">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contacts</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Products</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Accounts</a>
+                                </li>
+                            </ul>
+                        </div>
+
+            </nav> -->
+    <nav class="navbar navbar-expand-md fixed-top" style="border: 1px inset #00f;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#Home"><img id="brand" src="assets/images/Image8.jpg" alt="" style="object-fit: contain;">
+                <h5 class="brandtext"><i>Warlock's Web <i class="fa fa-globe"></i></i></h5>
+            </a>
+            <button type="button" class="navbar-toggler border-primary" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="fa fa-bars bg-primary"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#About" >About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contact" >Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Services" >Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Works" >Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Accounts" data-toggle="modal" data-target="#modalishnavtabform">Accounts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="FAQ's.html" target="_blank">FAQs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Modal: Login / Register Form-->
+    <div class="modal fade" id="modalishnavtabform" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog cascading-modal" role="document">
+            <!--Content-->
+            <div class="modal-content" style="background:#000;">
+
+                <!--Modal cascading tabs...Phew!-->
+                <div class="modal-c-tabs">
+
+                    <!-- Nav tabs...I really hate Code Warrior right now-->
+                    <ul class="nav nav-tabs md-tabs tabs-2" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#dessy" id="login" role="tab"><i
+                                    class="fa fa-user mr-1"></i>
+                                Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" data-toggle="tab" href="#dessy2" role="tab"><i
+                                    class="fa fa-user-plus mr-1"></i>
+                                Register</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panels -->
+                    <div class="tab-content">
+                        <!--dessy-->
+                        <div class="tab-pane fade in show active" id="dessy" role="tabpanel">
+
+                            <!--Body-->
+                            <div class="modal-body mb-1">
+                                <div class="md-form form-sm mb-5">
+                                    <i class="fa fa-user prefix"></i>
+                                    <input type="username id="dessy3"
+                                        class="form-control form-control-sm validate">
+                                    <label data-error="wrong" data-success="right" for="dessy3">Your
+                                        Username</label>
+                                </div>
+
+                                <div class="md-form form-sm mb-4">
+                                    <i class="fa fa-lock prefix"></i>
+                                    <input type="password" id="dessy4"
+                                        class="form-control form-control-sm validate">
+                                    <label data-error="wrong" data-success="right" for="dessy4">Your
+                                        password</label>
+                                </div>
+                                <div class="text-center mt-2">
+                                    <button type="submit" id="signin" class="btn btn-info">Log in <i class="fa fa-sign-in ml-1"></i></button>
+                                </div>
+                            </div>
+                            <!--Footer-->
+                            <div class="modal-footer">
+                                <div class="options text-center text-md-right mt-1">
+                                    <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
+                                    <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+                                </div>
+                                <button type="button" class="btn btn-outline-info waves-effect ml-auto"
+                                    data-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+                        <!--/end of dessy-->
+
+                        <!--dessy2-->
+                        <div class="tab-pane fade" id="dessy2" role="tabpanel">
+
+                            <!--Body-->
+                            <div class="modal-body">
+                                <div class="md-form form-sm mb-5">
+                                    <i class="fa fa-user prefix"></i>
+                                    <input type="email" id="dessy5"class="form-control form-control-sm validate">
+                                    <label data-error="wrong" data-success="right" for="dessy5">Your
+                                        Username</label>
+                                </div>
+                                <div class="md-form form-sm mb-5">
+                                    <i class="fa fa-envelope prefix"></i>
+                                    <input type="email" id="dmail" class="form-control form-control-sm validate">
+                                    <label data-error="wrong" data-success="right" for="dmail">Your
+                                        email</label>
+                                </div>
+                                <div class="md-form form-sm mb-5">
+                                    <i class="fa fa-lock prefix"></i>
+                                    <input type="password" id="dessy6"
+                                        class="form-control form-control-sm validate">
+                                    <label data-error="wrong" data-success="right" for="dessy6">Your
+                                        password</label>
+                                </div>
+
+                                <div class="md-form form-sm mb-4">
+                                    <i class="fa fa-lock prefix"></i>
+                                    <input type="password" id="dessy7"
+                                        class="form-control form-control-sm validate">
+                                    <label data-error="wrong" data-success="right" for="dessy7">Confirm
+                                        password</label>
+                                </div>
+
+                                <div class="text-center form-sm mt-2">
+                                    <button class="btn btn-info">Sign up <i class="fa fa-sign-in ml-1"></i></button>
+                                </div>
+
+                            </div>
+                            <!--Footer-->
+                            <div class="modal-footer">
+                                <div class="options text-right">
+                                    <p class="pt-1">Already have an account? <a href="#login" class="blue-text">Log In</a>
+                                    </p>
+                                </div>
+                                <button type="button" class="btn btn-outline-info waves-effect ml-auto"
+                                    data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        <!--/.end of dessy2-->
+                    </div>
+
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+                    <!--Modalish and Navtabish: Login / Register Form-->
+
+    <!-- <div class="text-center">
+        <a href="" class="btn btn-default btn-rounded my-3" data-toggle="modal" data-target="#modalLRForm">Launch
+            Modal LogIn/Register</a>
+    </div> -->
+<!-- <div class="modal fade" id="accounts" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Recipient:</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">Message:</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Send message</button>
+            </div>
+        </div>
+    </div>
+</div> -->
+            <!-- Now we are gonna setup our carousel -->
+            <div id="slides" class="carousel slide carousel-fade" data-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-target="#slides" data-slide-to="0" class="active"></li>
+                    <li data-target="#slides" data-slide-to="1"></li>
+                    <li data-target="#slides" data-slide-to="2"></li>
+                    <li data-target="#slides" data-slide-to="3"></li>
+                    <li data-target="#slides" data-slide-to="4"></li>
+
+                </ul>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="carousel-image" src="assets/images/Coder.jpg" alt="">
+                        <div class="carousel-caption">
+                            <h1 class="display-2">
+                                Warlock's Web <i class="fa fa-globe w-20 h-20"></i></h1>
+                            <h3>The future of the Web </h3>
+                            <button type="button" class="btn btn-outline-light btn-lg">Read More</button>
+                            <button type="button" class="btn btn-outline-primary btn-lg">Get Started</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="carousel-image" src="assets/images/sleek.jpg" alt="">
+                        <div class="carousel-caption caption-0">
+                            <h1 class="display-2">
+                                Warlock's Web <i class="fa fa-globe w-20 h-20"></i></h1>
+                            <h3 class="lead">Translate your minds...</h3>
+                            <p>Warlock's Web allows you to speak to the web in your own way</p>
+                            <button type="button" class="btn btn-outline-light btn-lg">Read More</button>
+                            <button type="button" class="btn btn-primary btn-lg">Get Started</button>
+                        </div>
+                    </div>
+                     <div class="carousel-item">
+                        <img class="carousel-image" src="assets/images/try_catch.jpg" alt="">
+                        <div class="carousel-caption caption-1">
+                            <h1 class="display-2">
+                                Warlock's Web <i class="fa fa-globe w-20 h-20"></i></h1>
+                            <h3 class="lead">Build your World...</h3>
+                            <p>Warlock's Web inspires and trains you to become a great Web designer</p>
+                            <button type="button" class="btn btn-outline-info btn-lg">Read More</button>
+                            <button type="button" class="btn btn-outline-primary btn-lg">Get Started</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="carousel-image" src="assets/images/lappy.jpg" alt="">
+                        <div class="carousel-caption caption-2">
+                            <h1 class="display-2">Warlock's Web <i class="fa fa-globe w-20 h-20"></i></h1>
+                                <h3 class="lead">Become Independent...</h3>
+                                <p style="color:#00f">The Love of Warlock's Web is the Beginning of Independence</p>
+                            <button type="button" class="btn btn-primary btn-lg">Read More</button>
+                            <button type="button" class="btn btn-outline-info text-light btn-lg">Get Started</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="carousel-image" src="assets/images/The_horizons.webp" alt="">
+                        <div class="carousel-caption caption-3">
+                            <h1 class="display-2">
+                                Warlock's Web <i class="fa fa-globe w-20 h-20"></i></h1>
+                            <h3 class="lead" style="color:#00f;text">Expand your Horizons</h3>
+                                <p style="text-shadow:2px 2px 18px #fff;color:#00f;">With Warlock's Web you'll escape the limit of the sky and attain greater height</p>
+                            <button type="button" class="btn btn-outline-light btn-lg">Read More</button>
+                            <button type="button" class="btn btn-outline-primary btn-lg">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Let's add a jumbotron -->
+            <div class="container-fluid contain">
+                <div class="row jumbotron text-primary">
+                    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10  text-center">
+                        <p class="lead">
+                            The Beauty,The Sacredness,The Passion and The Great Inspiration of The Web inspired the building of this page.
+                        </p>
+                        <p>Welcome to the <span style="font-weight: 900;text-transform: capitalize; text-shadow: 5px 5px 20px blue;">future of the web!</span></p>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+                        <a href="#">
+                            <button type="button" class="btn btn-outline-primary btn-lg" id="Home">Begin The Tour</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Welcome and Home -->
+            <div class="container-fluid padding" >
+                    <div class="row welcome text-center">
+                        <div class="col-12">
+                            <h1 class="display-5">Build Websites Easily With Desmond </h1>
+                                <hr>
+                                <div class="col-12">
+                                    <p class="lead">
+                                        Learn,Build and Become one of the greatest Web designers in the world. <br>
+                                        With Warlock and other web designers in the world,you are definitely going to become a powerful tool in the world of web designs. <br>
+                                        <span style="letter-spacing: 20px;text-transform: uppercase;text-align: center;">That's a
+                                            promise!</span>
+                                    </p>
+                                </div>
+                        </div>
+                    </div>
+            </div>
+            <!-- Modal -->
+            <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+                data-whatever="@mdo">Open modal for @mdo</button> -->
+
+            <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                    <input type="text" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message-text" class="col-form-label">Message:</label>
+                                    <textarea class="form-control" id="message-text"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Send message</button>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- Three column section for stories later -->
+            <!-- tipper people -->
+            <!-- /^([a-zA-Z]{3,16})$/ -->
+            <!-- <script type="text/javascript">
+                $(document).ready(function () {
+                    var $regexname = /^([a-zA-Z]{3,16})$/;
+                    $('.name').on('keypress keydown keyup', function () {
+                        if (!$(this).val().match($regexname)) {
+                            // there is a mismatch, hence show the error message
+                            $('.emsg').removeClass('hidden');
+                            $('.emsg').show();
+                        } else {
+                            // else, do not display message
+                            $('.emsg').addClass('hidden');
+                        }
+                    });
+                }); 
+            </script>
+            -->
+                                <!-- Services -->
+                                <p class="lead text-center">The Basic Front End Web design tools are all at your fingertips <br>They are yours to handle</p>
+            <div class="container-fluid padding" >
+                <div class="row text-center padding">
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <i class="fa fa-code"></i>
+                            <h3>HTML5</h3>
+                            <p>The Structural Tool in the "Manufacturing" and "Development" of the  Whole Structure of the WEB <br>It's the foundation of all your works</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-3">
+                            <i class="fab fa-css3"></i>
+                            <h3>CSS3</h3>
+                            <p id="Services">The Beautify tool,The modelling instrument,The sculptural</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <i class="fab fa-js"></i>
+                            <h3>BOOTSTRAP</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <i class="fa fa-bold"></i>
+                            <h3>BOOTSTRAP</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident</p>
+                        </div>
+                </div>
+                <hr class="my-4">
+            </div>
+            <!-- Two column section for more stories -->
+            
+            <div class="container-fluid padding" >
+                <div class="row padding">
+                    <div class="col-lg-6">
+                        <h2>If you believe...</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quos, quas facilis veritatis molestias voluptas fuga eos, alias, debitis modi corporis corrupti. Nobis cum voluptas architecto tenetur consequuntur accusantium vero.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus numquam, dolorum quas laborum exercitationem inventore soluta, ipsum, repudiandae tenetur ab id maiores velit quidem repellendus eveniet ut? Maxime, magnam ut.</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi vero tempore quasi earum quaerat, fugiat commodi blanditiis omnis laboriosam quo, voluptatibus deserunt, quos possimus maxime dolor itaque nihil labore unde.</p>
+                        <br>
+                        <a href="#" id="Works" class="btn  btn-outline-primary">Go somewhere</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="assets/images/office.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4" >
+            <!-- Fixed background -->
+            <figure>
+                <div class="fixed-wrap">
+                    <div id="fixed"></div>
+                </div>
+            </figure>
+            <!-- emoji shit -->
+            <button class="fun text-primary" data-toggle="collapse" data-target="#emoji"><i>Click To View Our Works</i></button>
+            <div id="emoji" class="collapse">
+              <div class="container-fluid padding">
+                  <div class="row text-center">
+                      <div class="col-sm-6 col-md-3">
+                          <img src="assets/images/jquery.jpg" alt="" class="gif">
+                      </div>
+                    <div class="col-sm-6 col-md-3">
+                        <img src="assets/images/Pyvsjs.jpg" alt="" class="gif">
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <img src="assets/images/pprog.jpg" alt="" class="gif">
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <img src="assets/images/pds.jpg" alt="" class="gif">
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <!-- Meet the Warlock -->
+            <div class="container-fluid padding">
+                <div class="row welcome text-center">
+                    <div class="col-12">
+                        <h1 class="display-4">Meet The Warlock</h1>
+                        <hr>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Cards -->
+            
+            <div class="container-fluid padding">
+                <div class="row padding">
+                    <div class="col-md-4 mt-4">
+                        <div class="card">
+                            <img src="assets/images/Fresh_css.png" alt="" class="card-img-top css1">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">Desmond</h4>
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A reiciendis amet ea dolore repell</p>
+                                <a href="#" class="btn btn-outline-primary">See Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-4">
+                        <div class="card">
+                            <img src="assets/images/HTM.png" alt="" class="card-img-top css2">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">Desmond</h4>
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A reiciendis amet ea dolore
+                                    repell</p>
+                                <a href="#" class="btn btn-outline-primary">See Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-4">
+                        <div class="card">
+                            <img src="assets/images/Bootstrap.png" alt="" class="card-img-top css3">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">Desmond</h4>
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A reiciendis amet ea dolore
+                                    repell</p>
+                                <a href="#" class="btn btn-outline-primary">See Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-4">
+                        <div class="card">
+                            <img src="assets/images/pychart.jpg" alt="" class="card-img-top css3">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">Desmond</h4>
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A
+                                    reiciendis amet ea dolore
+                                    repell</p>
+                                <a href="#" class="btn btn-outline-primary">See Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-4">
+                        <div class="card">
+                            <img src="assets/images/Jscript.jpg" alt="" class="card-img-top css3">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">Desmond</h4>
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A
+                                    reiciendis amet ea dolore
+                                    repell</p>
+                                <a href="#" class="btn btn-outline-primary">See Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-4">
+                        <div class="card">
+                            <img src="assets/images/J%J.png" alt="" class="card-img-top css3">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">Desmond</h4>
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A
+                                    reiciendis amet ea dolore
+                                    repell</p>
+                                <a href="#" class="btn btn-outline-primary">See Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Two Column Section -->
+            <div class="container-fluid padding" id="About">
+                <div class="row padding">
+                    <div class="col-lg-6">
+                        <h2>Our Philosophy</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quos, quas facilis veritatis molestias
+                            voluptas fuga eos, alias, debitis modi corporis corrupti. Nobis cum voluptas architecto tenetur
+                            consequuntur accusantium vero.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus numquam, dolorum quas laborum
+                            exercitationem inventore soluta, ipsum, repudiandae tenetur ab id maiores velit quidem repellendus
+                            eveniet ut? Maxime, magnam ut.</p>
+                        <br>
+                    </div>
+                    <div class="col-lg-6">
+                        <img  src="assets/images/office.jpg" class="img-fluid" alt="">
+                        <div id="Contact"></div>
+                    </div >
+                </div >
+                <hr class="my-4">
+            </div>
+            
+            <!-- Connect with my Social Media  -->
+            <div class="container-fluid padding">
+                <div class="row text-center padding">
+                    <div class="col-12">
+                        <h2>Contact The Warlock</h2>
+                        <div class="col-12 social padding">
+                            <a href="https://www.facebook.com/Michael%20Desmond%20Tgp"><i
+                                    class="fa fa-facebook"></i></a>
+                            <a href="http://www.google.com/codewarlock1><i class="fa fa-google-plus"></i></a>
+                            <a href="https://www.twitter.com/desmond43286706"><i class="fa fa-twitter"></i></a>
+                            <a href="http://www.whatsapp.com/08141248662"><i class="fa fa-whatsapp"></i></a>
+                            <a href="http://www.instagram.com/michaeldesmondtgp"><i class="fa fa-instagram"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer -->
+            <footer>
+                <div class="container-fluid padding text-primary">
+                    <div class="row text-center">
+                        <div class="col-md-4">
+                            <img id="brand" src="assets/images/Image8.jpg" alt="An image" style="object-fit: cover;">
+                            <hr class="light">
+                            <a class="d-block" href="tel:+2348141248662">+2348141248662</a><br>
+                            <a class="d-block"
+                                href="mailto:dessymichaeltgp123@gmail.com">dessymichaeltgp123@gmail.com</a><br>
+                            <a class="d-block" href="mailto:codewarlock1@gmail.com" target="_blank">codewarlock1@gmail.com</a><br>
+                            <address>4,Aiyelokun Street,Isabo,Abeokuta,Ogun State</address>
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <hr class="light">
+                            <p>Our Hours</p>
+                            <hr class="light">
+                            <p>&nbsp;Monday &raquo; 8:00am - 10:00pm</p>
+                            <p>Tuesday &raquo; 8:00am - 10:00pm</p>
+                            <p>Wednesday &raquo; 8:00am - 10:00pm</p>
+                            <p>Thursday &raquo; 8:00am - 10:00pm</p>
+                            <p>Friday &raquo; 8:00am - 8:00pm</p>
+                            <p>Saturday &raquo; 10:00am - 8:00pm</p>
+                            <p>Sunday &raquo; Free</p>
+
+                        </div>
+                        <div class="col-md-4">
+                            <hr class="light">
+                            <p>Subscriptions</p>
+                            <hr class="light">
+                            <a href="#" class="d-block"data-toggle="modal" data-target="#newsletter">Subscribe to our newsletter</a> <br>
+                            <p class="d-block">Support us</p>
+                            <p class="d-block">Partners</p>
+                        </div>
+                        <div class="modal fade" id="newsletter" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content" style="background-color: #000;">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">&nbsp; &nbsp; &nbsp; &nbsp;
+                                            &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; NEWSLETTER</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        </div>
+                        <section class="newsletter text-primary">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="content">
+                                            <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+                                            <div class="input-group">
+                                                <input type="email" class="form-control" style="background:#000" placeholder="Enter your email">
+                                                <span class="input-group-btn">
+                                                    <button class="btn text-primary btn-outline-primary sub" type="submit">Subscribe Now</button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="col-12">
+                            <hr class="light-100">
+                            <a href="http://codewarlock.42web.io/">
+                                <h5>&copy; warlock'sweb.com</h5>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </footer>
+</body>
+</html>
